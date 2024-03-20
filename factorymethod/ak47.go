@@ -1,4 +1,4 @@
-package factory
+package factorymethod
 
 type ak47 struct {
 	Gun

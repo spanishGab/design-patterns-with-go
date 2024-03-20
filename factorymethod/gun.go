@@ -1,4 +1,4 @@
-package factory
+package factorymethod
 
 type IGun interface {
 	setName(name string)
