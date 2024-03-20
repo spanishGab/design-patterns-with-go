@@ -1,7 +1,7 @@
 package main
 
 import (
-	factory "example/designpatterns/factory"
+	factory "example/designpatterns/factorymethod"
 	singleton "example/designpatterns/singleton"
 	"fmt"
 	"os"
