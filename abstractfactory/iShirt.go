@@ -4,7 +4,7 @@ type IShirt interface {
 	setBrand(brand string)
 	setSize(size int)
 	getBrand() string
-	getSize() string
+	getSize() int
 }
 
 type Shirt struct {
