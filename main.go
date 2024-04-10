@@ -4,6 +4,7 @@ import (
 	abstractfactory "example/designpatterns/abstractfactory"
 	"example/designpatterns/builder"
 	factory "example/designpatterns/factorymethod"
+	prototype "example/designpatterns/prototype"
 	singleton "example/designpatterns/singleton"
 	"fmt"
 	"os"
@@ -23,6 +24,9 @@ func main() {
 			break
 		case "builder":
 			builder.BuilderClient()
+			break
+		case "prototype":
+			prototype.PrototypeClient()
 			break
 		default:
 			fmt.Println("Pattern not found")
