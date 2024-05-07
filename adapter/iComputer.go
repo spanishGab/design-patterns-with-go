@@ -1,5 +1,5 @@
 package adapter
 
-type Computer interface {
+type IComputer interface {
 	insertIntoLightningPort()
 }
