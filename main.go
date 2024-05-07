@@ -3,6 +3,7 @@ package main
 import (
 	abstractfactory "example/designpatterns/abstractfactory"
 	"example/designpatterns/adapter"
+	"example/designpatterns/bridge"
 	"example/designpatterns/builder"
 	factory "example/designpatterns/factorymethod"
 	prototype "example/designpatterns/prototype"
@@ -19,6 +20,9 @@ func main() {
 			break
 		case "adapter":
 			adapter.AdapterClient()
+			break
+		case "bridge":
+			bridge.BridgeClient()
 			break
 		case "builder":
 			builder.BuilderClient()
