@@ -6,6 +6,7 @@ import (
 	"example/designpatterns/bridge"
 	"example/designpatterns/builder"
 	"example/designpatterns/composite"
+	"example/designpatterns/decorator"
 	factory "example/designpatterns/factorymethod"
 	prototype "example/designpatterns/prototype"
 	singleton "example/designpatterns/singleton"
@@ -30,6 +31,9 @@ func main() {
 			break
 		case "composite":
 			composite.CompositeClient()
+			break
+		case "decorator":
+			decorator.DecoratorClient()
 			break
 		case "factory":
 			factory.FactoryClient()
