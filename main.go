@@ -9,6 +9,7 @@ import (
 	"example/designpatterns/decorator"
 	"example/designpatterns/facade"
 	factory "example/designpatterns/factorymethod"
+	"example/designpatterns/flyweight"
 	prototype "example/designpatterns/prototype"
 	singleton "example/designpatterns/singleton"
 	"fmt"
@@ -41,6 +42,9 @@ func main() {
 			break
 		case "factory":
 			factory.FactoryClient()
+			break
+		case "flyweight":
+			flyweight.FlyweightClient()
 			break
 		case "prototype":
 			prototype.PrototypeClient()
