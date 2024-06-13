@@ -19,5 +19,4 @@ func FlyweightClient() {
 	for dressType, dress := range dressFactoryInstance.dressMap {
 		fmt.Printf("DressColorType: %s\nDressColor: %s\n", dressType, dress.getColor())
 	}
-	// TODO: analisar se realmente está criando um objeto de cada dress type
 }

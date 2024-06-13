@@ -7,8 +7,8 @@ type game struct {
 
 func newGame() *game {
 	return &game{
-		terrorists: make([]*Player, 1),
-		counterTerrorists: make([]*Player, 1),
+		terrorists: make([]*Player, 0),
+		counterTerrorists: make([]*Player, 0),
 	}
 }
 
