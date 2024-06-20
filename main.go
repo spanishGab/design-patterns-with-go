@@ -11,6 +11,7 @@ import (
 	factory "example/designpatterns/factorymethod"
 	"example/designpatterns/flyweight"
 	prototype "example/designpatterns/prototype"
+	"example/designpatterns/proxy"
 	singleton "example/designpatterns/singleton"
 	"fmt"
 	"os"
@@ -48,6 +49,9 @@ func main() {
 			break
 		case "prototype":
 			prototype.PrototypeClient()
+			break
+		case "proxy":;
+			proxy.ProxyClient()
 			break
 		case "singleton":
 			singleton.SingletonClient()
