@@ -5,6 +5,7 @@ import (
 	"example/designpatterns/adapter"
 	"example/designpatterns/bridge"
 	"example/designpatterns/builder"
+	"example/designpatterns/chainofresponsibility"
 	"example/designpatterns/composite"
 	"example/designpatterns/decorator"
 	"example/designpatterns/facade"
@@ -31,6 +32,9 @@ func main() {
 			break
 		case "builder":
 			builder.BuilderClient()
+			break
+		case "cor":
+			chainofresponsibility.CoRClient()
 			break
 		case "composite":
 			composite.CompositeClient()
