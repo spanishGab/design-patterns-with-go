@@ -6,6 +6,7 @@ import (
 	"example/designpatterns/bridge"
 	"example/designpatterns/builder"
 	"example/designpatterns/chainofresponsibility"
+	"example/designpatterns/command"
 	"example/designpatterns/composite"
 	"example/designpatterns/decorator"
 	"example/designpatterns/facade"
@@ -20,48 +21,36 @@ import (
 
 func main() {
 	var chosenDesignPattern string = os.Args[1]
-	switch (chosenDesignPattern) {
-		case "abstractfactory":
-			abstractfactory.AbstractFactoryClient()
-			break
-		case "adapter":
-			adapter.AdapterClient()
-			break
-		case "bridge":
-			bridge.BridgeClient()
-			break
-		case "builder":
-			builder.BuilderClient()
-			break
-		case "cor":
-			chainofresponsibility.CoRClient()
-			break
-		case "composite":
-			composite.CompositeClient()
-			break
-		case "decorator":
-			decorator.DecoratorClient()
-			break
-		case "facade":
-			facade.FacadeClient()
-			break
-		case "factory":
-			factory.FactoryClient()
-			break
-		case "flyweight":
-			flyweight.FlyweightClient()
-			break
-		case "prototype":
-			prototype.PrototypeClient()
-			break
-		case "proxy":;
-			proxy.ProxyClient()
-			break
-		case "singleton":
-			singleton.SingletonClient()
-			break
-		default:
-			fmt.Println("Pattern not found")
-			break
+	switch chosenDesignPattern {
+	case "abstractfactory":
+		abstractfactory.AbstractFactoryClient()
+	case "adapter":
+		adapter.AdapterClient()
+	case "bridge":
+		bridge.BridgeClient()
+	case "builder":
+		builder.BuilderClient()
+	case "cor":
+		chainofresponsibility.CoRClient()
+	case "command":
+		command.CommandClient()
+	case "composite":
+		composite.CompositeClient()
+	case "decorator":
+		decorator.DecoratorClient()
+	case "facade":
+		facade.FacadeClient()
+	case "factory":
+		factory.FactoryClient()
+	case "flyweight":
+		flyweight.FlyweightClient()
+	case "prototype":
+		prototype.PrototypeClient()
+	case "proxy":
+		proxy.ProxyClient()
+	case "singleton":
+		singleton.SingletonClient()
+	default:
+		fmt.Println("Pattern not found")
 	}
 }
