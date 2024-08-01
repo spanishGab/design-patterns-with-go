@@ -12,6 +12,7 @@ import (
 	"example/designpatterns/facade"
 	factory "example/designpatterns/factorymethod"
 	"example/designpatterns/flyweight"
+	"example/designpatterns/iterator"
 	prototype "example/designpatterns/prototype"
 	"example/designpatterns/proxy"
 	singleton "example/designpatterns/singleton"
@@ -44,6 +45,8 @@ func main() {
 		factory.FactoryClient()
 	case "flyweight":
 		flyweight.FlyweightClient()
+	case "iterator":
+		iterator.IteratorClient()
 	case "prototype":
 		prototype.PrototypeClient()
 	case "proxy":
